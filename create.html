@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TakaraConnect</title>
-    <link rel="stylesheet" href="css/main.css" >
-    <link rel="stylesheet" href="css/reset.css" >
+    <script src="create.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
     <script src="header.js"></script>
+    <link rel="stylesheet" href="css/reset.css" >
+    <link rel="stylesheet" href="css/create.css" >
 </head>
 <body>
     <script>include_header();</script>
-    <div id="top">
-        <h1>Share your treasures with us.</h1>
+    <div id="header">
+        <div class="container">
+            <div class="imageUpload">
+                <img id="image"/>
+                <form>
+                    <input  type="file" id="upLoad" onchange="onFileSet(this);">
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
